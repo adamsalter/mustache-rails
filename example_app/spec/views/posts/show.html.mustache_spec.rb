@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "/posts/show.html.haml" do
+describe "/posts/show.html.mustache" do
   include PostsHelper
   before(:each) do
     assigns[:post] = @post = stub_model(Post)
