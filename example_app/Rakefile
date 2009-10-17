@@ -8,3 +8,7 @@ require 'rake/testtask'
 require 'rake/rdoctask'
 
 require 'tasks/rails'
+
+task :update_mustache do
+  system("./script/plugin install http://github.com/defunkt/mustache.git/ --force")
+end

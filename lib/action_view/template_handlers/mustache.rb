@@ -4,7 +4,7 @@ module ActionView
       include Compilable
 
       def compile(template)
-        src = ::Mustache.new("#{template.source}").to_html
+        src = ::Mustache.render("#{template.source}")
       end
     end
   end
