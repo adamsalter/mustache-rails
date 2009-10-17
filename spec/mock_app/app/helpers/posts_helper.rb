@@ -35,6 +35,7 @@ module PostsHelper
   
   module New
     def form_for_post
+      # forms not working yet
       # form = ""
       # form_for(@post) do |f|
       #   form += f.error_messages
@@ -48,6 +49,7 @@ module PostsHelper
   
   module Edit
     def form_for_post
+      # forms not working yet
       # form = ""
       # form_for(@post) do |f|
       #   form += f.error_messages
