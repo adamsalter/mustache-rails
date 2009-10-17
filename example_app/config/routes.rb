@@ -1,5 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :hello_worlds
+  map.resources :posts
+  
+  map.root :controller => 'posts', :action => 'index'
 
   # The priority is based upon order of creation: first created -> highest priority.
 

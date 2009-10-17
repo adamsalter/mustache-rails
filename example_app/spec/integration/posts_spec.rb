@@ -1,4 +1,4 @@
 require 'spec_helper'
 
-describe "HelloWorlds" do
+describe "Posts" do
 end
