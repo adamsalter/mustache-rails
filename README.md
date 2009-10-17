@@ -5,8 +5,6 @@ An attempt to integrate the awesome Mustache template builder by Chris Wanstrath
 
 Unfortunately, integration is a work in progress since Rails is quite a large and complicated beast.
 
-If you have any issues please raise a ticket.
-
 Because Mustache forces you to keep all logic out of your template code, it actually changes the paradigm a little. Previously Rails Helpers were a place to put code that didn't quite fit into your view templates exactly, but now, if you have to move _all_ code out of your templates, you will actually find that you require greater code seperation. The current solution is to create sub-modules on the Helpers for each action, as shown below.
 
 Example Usage:
@@ -54,8 +52,18 @@ app/views/pages/index.html.mustache
 
 There is an example application available in the 'spec/mock_app' directory.
 
+Testing:
+-------
+
+You can `rake spec` to run the tests.
+
+Requires the mustache gem to be installed.
+
 Known Issues:
+--------
 
 - layouts not working
 - form_for and other helpers are designed to be called within an erb template and therefore need a bit more work. Basic stuff like the calculations above definitely works though. For more information see [this post by Yahuda Katz](http://yehudakatz.com/2009/08/31/simplifying-rails-block-helpers-with-a-side-of-rubinius/).
+
+
 

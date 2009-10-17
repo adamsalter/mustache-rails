@@ -14,7 +14,7 @@ module ::ActionView
         extend #{view_action_helper} if defined? #{view_action_helper}
         #{compiled_template}
         EOT
-        
+
         template_in_context
       end
     end
