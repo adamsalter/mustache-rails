@@ -1,6 +1,6 @@
 require "mustache"
 
-require 'mustache/rails'
+require 'mustache/rails/helper'
 require 'action_view/template_handlers/mustache'
 
 ActionView::Template.register_template_handler(:mustache, ActionView::TemplateHandlers::Mustache)
