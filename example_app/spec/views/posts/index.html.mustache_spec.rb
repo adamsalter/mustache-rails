@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "/posts/index.html.erb" do
+describe "/posts/index.html.mustache" do
   include PostsHelper
 
   before(:each) do
