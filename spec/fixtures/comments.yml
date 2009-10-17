@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+# one:
+#   column: value
+#
+# two:
+#   column: value
+
+one:
+  title: I Love First Post!
+  content: I Love First Post! I Love First Post!
+  
+two:
+  title: Second Post is OK, I guess.
+  content: Alright, it's pretty cool after all!

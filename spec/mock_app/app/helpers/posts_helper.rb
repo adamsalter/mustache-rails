@@ -1,4 +1,8 @@
 module PostsHelper
+  def page_title
+    "Every Good Post"
+  end
+
   def post
     @post
   end
