@@ -57,5 +57,5 @@ There is an example application available in the 'spec/mock_app' directory.
 Known Issues:
 
 - layouts not working
-- form_for and other helpers are designed to be called within an erb template and therefore need a bit more work. Basic stuff like the calculations above definately works though.
+- form_for and other helpers are designed to be called within an erb template and therefore need a bit more work. Basic stuff like the calculations above definitely works though. For more information see [this post by Yahuda Katz](http://yehudakatz.com/2009/08/31/simplifying-rails-block-helpers-with-a-side-of-rubinius/).
 
