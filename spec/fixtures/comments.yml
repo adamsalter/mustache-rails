@@ -7,9 +7,19 @@
 #   column: value
 
 one:
+  id: 1
   title: I Love First Post!
   content: I Love First Post! I Love First Post!
+  post_id: 1
   
 two:
+  id: 2
+  title: I love first post better than you.
+  content: I love first post better than you.
+  post_id: 1
+
+three:
+  id: 3
   title: Second Post is OK, I guess.
   content: Alright, it's pretty cool after all!
+  post_id: 2

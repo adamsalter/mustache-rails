@@ -7,11 +7,11 @@
 #   column: value
 
 one:
+  id: 1
   title: First Post!
   content: First Post! First Post! First Post!
-  comment: one
   
 two:
+  id: 2
   title: Second Post!
   content: Second Post! Second Post! Second Post!
-  comment: two
