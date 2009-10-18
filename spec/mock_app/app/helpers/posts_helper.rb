@@ -8,15 +8,15 @@ module PostsHelper
   end
 
   def link_to_show_post
-    link_to 'Show', self[:post]
+    link_to 'Show', context[:post]
   end
 
   def link_to_edit_post
-    link_to 'Edit', edit_post_path(self[:post])
+    link_to 'Edit', edit_post_path(context[:post])
   end
 
   def link_to_destroy_post
-    link_to 'Destroy', self[:post], :confirm => 'Are you sure?', :method => :delete
+    link_to 'Destroy', context[:post], :confirm => 'Are you sure?', :method => :delete
   end
 
   def link_to_new_post
