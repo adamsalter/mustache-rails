@@ -21,12 +21,12 @@ app/controllers/pages_controller.rb
 app/helpers/pages_helper.rb
 
     module PagesHelper
-      def show_title
-        "Generic Page Title"
+      def page_title
+        "%s | Generic Page Title" % page_sub_title
       end
   
       module Index
-        def show_title
+        def page_sub_title
           "Index Page Title"
         end
         
@@ -40,7 +40,7 @@ app/views/layouts/application.html.mustache
 
     <html>
       <head>
-        <title>{{show_title}}</title>
+        <title>{{page_title}}</title>
       </head>
       {{{yield}}}
     </html>
@@ -62,8 +62,8 @@ Requires the mustache gem to be installed.
 Known Issues:
 --------
 
-- layouts not working
 - form_for and other helpers are designed to be called within an erb template and therefore need a bit more work. Basic stuff like the calculations above definitely works though. For more information see [this post by Yahuda Katz](http://yehudakatz.com/2009/08/31/simplifying-rails-block-helpers-with-a-side-of-rubinius/).
-
+- content_for is not working, but the cascading nature of the Helpers means that this is not really an issue. It would be nice to get these working though since they are widely used rails methods.
+- rails incorrectly reports line numbers for errors in templates.
 
 

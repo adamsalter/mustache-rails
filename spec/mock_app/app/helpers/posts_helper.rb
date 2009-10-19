@@ -1,8 +1,4 @@
 module PostsHelper
-  def page_title
-    "Every Good Post"
-  end
-
   def post
     @post
   end
@@ -28,14 +24,55 @@ module PostsHelper
   end
   
   module Index
+    def content_for_page_title
+      "Index"
+    end
+    
+    def content_for_meta_data
+      {'Description' => 'Everything you love about Mustache and less fat'}
+    end
+
+    def post_title
+      context[:post].title
+    end
+    
+    def post_excerpt
+      truncate(context[:post].content)
+    end
+    
     def posts
       @posts.map {|p| {:post => p} }
     end
   end
   
+  module Show
+    def content_for_page_title
+      "Show"
+    end
+    
+    def content_for_meta_data
+      {'Description' => 'Everything you love about Mustache and less fat'}
+    end
+
+    def post_title
+      @post.title
+    end
+    
+    def post_content
+      @post.content
+    end
+  end
+  
   module New
+    def content_for_page_title
+      "New"
+    end
+    
+    def content_for_meta_data
+      {'Description' => 'Everything you love about Mustache and less fat'}
+    end
+
     def form_for_post
-      # forms not working yet
       # form = ""
       # form_for(@post) do |f|
       #   form += f.error_messages
@@ -44,12 +81,20 @@ module PostsHelper
       #   form += content_tag('p') { f.submit 'Create'}
       # end
       # form
+      "forms not working yet"
     end
   end
   
   module Edit
+    def content_for_page_title
+      "Edit"
+    end
+    
+    def content_for_meta_data
+      {'Description' => 'Everything you love about Mustache and less fat'}
+    end
+
     def form_for_post
-      # forms not working yet
       # form = ""
       # form_for(@post) do |f|
       #   form += f.error_messages
@@ -58,6 +103,7 @@ module PostsHelper
       #   form += content_tag('p') { f.submit 'Create'}
       # end
       # form
+      "forms not working yet"
     end
   end
 

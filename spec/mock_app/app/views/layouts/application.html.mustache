@@ -4,14 +4,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-  <title>Posts: <%= controller.action_name %></title>
-  <%= stylesheet_link_tag 'scaffold' %>
+  <title>{{{page_title}}}</title>
+  {{{meta_data}}}
+  {{{link_scaffold_stylesheet}}}
 </head>
 <body>
 
-<p style="color: green"><%= flash[:notice] %></p>
+<p style="color: green">{{flash_notice}}</p>
 
-<%= yield %>
+{{! Be careful to use three (3) mustaches for yeild, otherwise your templates html will become html entities}}
+
+{{{yield}}}
 
 </body>
 </html>

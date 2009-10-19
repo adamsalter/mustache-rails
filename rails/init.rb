@@ -12,6 +12,7 @@ module ::ActionView
         template_in_context = <<-EOT
         extend ::Mustache::Rails::Helper
         extend #{view_action_helper} if defined? #{view_action_helper}
+        context[:yield] = yield
         #{compiled_template}
         EOT
 
